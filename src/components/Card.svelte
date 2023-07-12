@@ -1,15 +1,15 @@
 <script>
-    import card from '../assets/png/zarf-card.png'
+    import card from '../assets/png/zarf-card.png';
     export let img;
     export let text;
-    export let heroText
+    export let heroText;
 </script>
 
 <div class="container">
     <div class="flex">
         <img class="card" src="{card}" alt="">
         <div class="smallContainer">
-            <img class="cardImg" src={img} alt="">
+            <img class="cardImg" src="{img}" alt="">
             <h1>{heroText}</h1>
             <p>{text}</p>
         </div>
@@ -18,37 +18,42 @@
 
 <style>
     .container {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 100%;
+        width: 320px;
+        height: 400px;
+        padding: 27px;
+        margin: 2em;
     }
 
     .flex {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        padding: 27px;
+        width: 320px;
+        height: 400px;
     }
 
     .card {
-        z-index: -1;
+        z-index: 0;
+        width: 200%;
+        height: 120%;
     }
 
     .smallContainer {
+        width: 265px;
+        height: 400px;
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 27px 24px 27px 24px;
-        overflow: hidden;
-        flex-wrap: wrap; /* Add flex-wrap: wrap to allow cards to wrap */
+        padding: 37px;
+        text-align: center;
+
     }
 
-    .cardImg {
-        height: 85px;
+    p{
+        font-size: 1em;
     }
 
     h1 {
@@ -56,10 +61,17 @@
         align-self: center;
         justify-content: center;
         align-items: center;
-        color: white;
+        font-size: 21px;
     }
 
-    p {
-        color: white;
+    .cardImg {
+        height: 100px;
+        width: 100px;
     }
+
+    img {
+        height: 400px;
+        width: 320px;
+    }
+
 </style>

@@ -6,7 +6,6 @@
 
 <div class="container">
     <div class="flex">
-
         <div class="smallContainer">
             <img class="cardImg" src={img} alt="">
             <h1>{heroText}</h1>
@@ -17,11 +16,7 @@
 
 <style>
     .container {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin-top: 38%;
-        margin-bottom: 10%;
+        margin-top: 5%;
     }
 
     .flex {
@@ -29,17 +24,20 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .smallContainer {
-        position: absolute;
+        height: 450px;
+        width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 27px 24px 27px 24px;
-        overflow: hidden;
-        flex-wrap: wrap; /* Add flex-wrap: wrap to allow cards to wrap */
+        /* padding: 27px 24px 27px 24px; */
+        margin: 1em;
+        flex-wrap: wrap;
+        box-sizing: border-box; /* Include padding and borders in width and height calculations */
     }
 
     .cardImg {
@@ -51,10 +49,10 @@
         align-self: center;
         justify-content: center;
         align-items: center;
-        color: white;
+        font-size: 24px;
     }
 
-    p {
-        color: white;
+    p{
+        font-size: 16px;
     }
 </style>

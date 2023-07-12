@@ -23,8 +23,8 @@
     }
 
     .zarf{
-        height: 250px;
-        width: 250px;
+        height: 100px;
+        width: 100px;
     }
 
     .github{

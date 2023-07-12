@@ -1,6 +1,7 @@
 <script>
     import { copy } from 'svelte-copy';
 
+
     let brew = 'brew install kind && kind delete cluster && kind create cluster';
 
     let zarf = 'zarf  init'
@@ -51,16 +52,17 @@
     }
 
     .CopyContainer {
+        display: flex;
         border: 2px solid #7BD5F4;
         background-color: #2F3459;
         border-radius: 2%;
-        height: 345px;
-        width: 742px;
-        display: flex;
+        height: 35vh;
+        width: 75vw;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         padding: 10px;
+        flex-shrink: 2;
     }
 
     .Copy {
@@ -101,7 +103,10 @@
         border: none;
         color: white;
         width: 650px;
+    }
 
+    img{
+        height: 35px;
     }
 
     h1 {

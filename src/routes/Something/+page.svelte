@@ -1,5 +1,12 @@
 <script>
-	import Blob from "../../components/blob/Blob.svelte";
-
+import Home from "../../components/Home/Home.svelte";
 </script>
-<Blob/>
+
+<Home/>
+
+
+
+
+<style>
+
+</style>

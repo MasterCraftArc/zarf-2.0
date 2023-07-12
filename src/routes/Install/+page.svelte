@@ -4,11 +4,7 @@
     import C from "../../components/Install/Install.svelte";
 
     let textToCopy = "brew tap defenseunicorns/tap && brew install zarf";
-
-
 </script>
-
-
 
 <div class="container">
     <div class="blob"><Blob/></div>
@@ -27,24 +23,18 @@
 <C/>
 
 <style>
+    .container{
+        margin-bottom: 60rem;
+    }
+
     .blob {
-        z-index: 0;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 100%;
-        width: 100%;
-
-    }
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        margin-bottom: 55%;
+        width: 150%;
+        height: auto;
+        z-index: 0;
     }
 
     .content {
@@ -53,40 +43,54 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        z-index: 1;
+        width: 80%;
+        color: white;
     }
 
-    .Copy{
-        border: #7BD5F4;
-        border-style: solid;
-        border-width: 2px;
+    .Copy {
+        border: 2px solid #7BD5F4;
         background-color: #2F3459;
         border-radius: 2%;
         height: 45px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:  0px 10px 0px 10px;
-    }
-    button{
-        background-color: #2F3459;
-        border: none;
-        color:white
-    }
-    button:hover{
-        color:#7BD5F4
-    }
-    input{
-        background-color: #2F3459;
-        border: none;
-        color:white;
+        padding: 0px 10px;
+        margin-top: 20px;
         width: 100%;
+        box-sizing: border-box;
     }
 
-    h1{
+    button {
+        background-color: #2F3459;
+        border: none;
         color: white;
     }
 
-    p{
-        color:white
+    button:hover {
+        color: #7BD5F4;
+    }
+
+    input {
+        background-color: #2F3459;
+        border: none;
+        color: white;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            margin-top: 0;
+            width: 90%;
+        }
     }
 </style>
