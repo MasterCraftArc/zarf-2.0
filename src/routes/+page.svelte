@@ -104,8 +104,7 @@
 
 	.Card {
 		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
+		gap: 60px;
 	}
 
 	.CardsContainer {

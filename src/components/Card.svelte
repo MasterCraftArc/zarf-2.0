@@ -20,8 +20,9 @@
     .container {
         width: 320px;
         height: 400px;
-        padding: 27px;
-        margin: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .flex {
