@@ -85,7 +85,7 @@ h6 {
     }
 
     .text-container{
-        width: 500px;
+        width: 300px;
     }
 }
 </style>
