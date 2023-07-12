@@ -6,6 +6,7 @@
     import { onMount } from 'svelte';
 
     let scrolled = false;
+    let currentPage;
 
     onMount(() => {
         window.addEventListener('scroll', handleScroll);
@@ -13,7 +14,13 @@
 
     function handleScroll() {
         scrolled = window.scrollY > 0;
-    }
+    };
+
+    onMount (() => {
+        currentPage = window.location.pathname
+    });
+
+
 </script>
 
 <div class="navbar" class:scrolled>
@@ -25,7 +32,7 @@
         </div>
 
         <div class="links">
-            <a href="/">PRODUCT</a>
+            <a href="/" class:selected={currentPage === '/'}>PRODUCT</a>
             <a href="/">EXAMPLES</a>
             <a href="/">DOCS</a>
             <a href={githubLink}><img class="github" src="{github}" alt=""></a>
@@ -52,7 +59,7 @@
 }
 
 .github {
-    max-width: 30px;
+    max-width: 25px;
     background-blend-mode: darken, luminosity;
 }
 
@@ -81,6 +88,11 @@
     padding: 1em;
 }
 
+.selected{
+    border-bottom: 2px solid turquoise;
+    color: turquoise;
+}
+
 a {
     margin: 5px;
     border: none;
@@ -89,11 +101,20 @@ a {
     justify-content: space-between;
 }
 
+a:hover {
+    border-bottom: 2px solid turquoise;
+    color: turquoise;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
 .links {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
-
 </style>

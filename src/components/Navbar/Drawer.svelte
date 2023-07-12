@@ -11,14 +11,14 @@
     easing: sineIn
   };
 
-  let sidebarBackgroundColor = '#0D133D'; // Set the desired background color here
+  let sidebarBackgroundColor = '#0D133D';
 
   onMount(() => {
-    hidden2 = false; // Show the navigation drawer on mount
+    hidden2 = false;
   });
 
   afterUpdate(() => {
-    hidden2 = true; // Hide the navigation drawer after update (refresh or resize)
+    hidden2 = true;
   });
 </script>
 

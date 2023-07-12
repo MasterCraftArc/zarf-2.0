@@ -20,12 +20,12 @@
 .container {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15%;
+    align-items: center; /* Align items to the top */
+    justify-content: center; /* Justify content to the left */
     z-index: 1;
     max-width: 100%; /* Set maximum width to 100% */
     overflow: hidden; /* Hide the overflow content */
+
 }
 
 .stats-card {
@@ -33,7 +33,6 @@
     width: 90vw;
     z-index: 1;
 }
-
 
 h1 {
     padding-bottom: 10px;
@@ -59,43 +58,34 @@ h6 {
 
 .text-container {
     position: absolute;
-    width: 200px;
     top: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 0 5%;
+    padding: 0 1%;
     z-index: 2;
-    margin-top: 5rem;
-    max-width: 450px; /* Set maximum width to 100% of the container */
-    margin-left: 2rem;
+    margin-top: 2rem;
+    max-width: 100%; /* Set maximum width to 100% of the container */
 }
 
 .zarf-image {
     position: absolute;
     bottom: 0;
-    right: 0;
-    height: 250px;
-    width: 250px;
+    right: -1;
+    height: 200px;
+    width: 200px;
     z-index: 1;
-    margin-right: 5%;
 }
 
 @media (max-width: 992px) {
-    .container {
-        flex-wrap: wrap;
-    }
-
     .stats-card {
         height: 110vh;
         width: 60vw;
     }
 
-    .text-container {
-        width: auto;
-        top: 0;
-        left: 25%;
+    .text-container{
+        width: 500px;
     }
 }
 </style>
