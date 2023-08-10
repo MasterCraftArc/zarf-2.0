@@ -36,12 +36,12 @@
 
     .card {
         z-index: 0;
-        width: 200%;
-        height: 120%;
+        width: 300px;
+        height: 350px;
     }
 
     .smallContainer {
-        width: 265px;
+        width: 320px;
         height: 400px;
         position: absolute;
         display: flex;
@@ -55,6 +55,10 @@
 
     p{
         font-size: 1em;
+        font-family: "Roboto";
+        color: #FFFF;
+        margin-top: .7em;
+        font-size: 16px;
     }
 
     h1 {
@@ -63,16 +67,12 @@
         justify-content: center;
         align-items: center;
         font-size: 21px;
+        font-family: 'M PLUS Rounded 1c',Tahoma, sans-serif;
     }
 
     .cardImg {
-        height: 100px;
-        width: 100px;
-    }
-
-    img {
-        height: 400px;
-        width: 320px;
+        height: 80px;
+        width: 80px;
     }
 
 </style>

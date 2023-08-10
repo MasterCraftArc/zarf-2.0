@@ -20,18 +20,12 @@
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
-        margin: 10%;
+        margin: 2%;
     }
 
-    .left {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 
     .right {
-        width: 50%;
+        width: 30%;
     }
 
     img {
@@ -44,9 +38,12 @@
         margin-bottom: 2%;
         font-size: 43px;
         margin-bottom: 25px;
+        font-family: 'M PLUS Rounded 1c',Tahoma, sans-serif;
     }
 
-
+    p{
+        font-family: "Roboto";
+    }
 
     @media screen and (max-width: 991px) {
         .container {
@@ -61,6 +58,7 @@
         .left{
             display: flex;
             align-items: center;
+            justify-content: center;
         }
     }
 </style>

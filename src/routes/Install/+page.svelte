@@ -25,6 +25,7 @@
 <style>
     .container{
         margin-bottom: 60rem;
+        gap: 100px;
     }
 
     .blob {
@@ -90,7 +91,8 @@
     @media (max-width: 768px) {
         .content {
             margin-top: 0;
-            width: 90%;
+            width: 100%;
         }
     }
+
 </style>

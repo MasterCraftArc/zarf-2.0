@@ -2,7 +2,7 @@
     import github from '../../assets/png/github.png';
     const githubLink = 'https://github.com/defenseunicorns/zarf';
     import slack from '../../assets/svg/slack.svg';
-    import zarf from '../../assets/png/zarf-logo.png';
+    import zarf from '../../assets/svg/zarf-logo-small.svg';
     import { onMount } from 'svelte';
 
     let scrolled = false;
@@ -32,89 +32,112 @@
         </div>
 
         <div class="links">
-            <a href="/" class:selected={currentPage === '/'}>PRODUCT</a>
-            <a href="/">EXAMPLES</a>
-            <a href="/">DOCS</a>
-            <a href={githubLink}><img class="github" src="{github}" alt=""></a>
+            <div class="mylinks">
+                <a href="/" class:selected={currentPage === '/'}>PRODUCT</a>
+            </div>
+            <div class="mylinks">
+                <a href="/">EXAMPLES</a>
+            </div>
+                <div class="mylinks">
+                <a href="/">DOCS</a>
+            </div>
+
             <a href="/"><img class="github" src="{slack}" alt=""></a>
+            <a href={githubLink}><img class="github" src="{github}" alt=""></a>
         </div>
     </div>
 </div>
 
+
 <style>
-.scrolled {
-    background-color: #0c143c;
-    transition: background-color .5s ease-in-out;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
-}
+    .scrolled {
+        background-color: #0c143c;
+        transition: background-color .5s ease-in-out;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+    }
 
-.navbar {
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 2;
+    .navbar {
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 2;
+    }
 
-}
+    .github {
+        max-width: 25px;
+        background-blend-mode: darken, luminosity;
+    }
 
-.github {
-    max-width: 25px;
-    background-blend-mode: darken, luminosity;
-}
+    .holder {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1%;
+        height: auto;
+        width: auto;
+    }
 
-.holder {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 1%;
-}
+    .zarf {
+        height: auto;
+        width: 156px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.zarf {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        z-index: 0;
+        overflow: hidden;
+        max-width: none;
+        /* padding: 1em 1em 1em 0em; */
+    }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    z-index: 0;
-    overflow: hidden;
-    max-width: none;
-    padding: 1em;
-}
+    .mylinks {
+        position: relative;
+    }
 
-.selected{
-    border-bottom: 2px solid turquoise;
-    color: turquoise;
-}
-
-a {
-    margin: 5px;
-    border: none;
-    color: white;
-    text-decoration: none;
-    justify-content: space-between;
-}
-
-a:hover {
-    border-bottom: 2px solid turquoise;
-    color: turquoise;
-}
-
-a:hover::after {
-    transform: scaleX(1);
-}
+    .mylinks::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: turquoise;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
 
 
 
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+    a {
+        margin: 15px;
+        border: none;
+        color: white;
+        text-decoration: none;
+        justify-content: space-between;
+        font-family: 'Roboto';
+        font-size: 14px;
+    }
+
+    .selected {
+        border-bottom: 2px solid turquoise;
+        color: turquoise;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    a:hover::after {
+        transform: scaleX(1);
+    }
 </style>

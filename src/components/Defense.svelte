@@ -4,7 +4,7 @@
 </script>
 
 <div class="blob-container">
-	<div class="blob"><Blob/></div>
+
 	<div class="text-container">
 		<h1>Created & Maintained by:</h1>
 		<img src="{Doug}" alt="" class="image-on-blob">
@@ -21,6 +21,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 10rem;
+	margin-bottom: 15rem;
 }
 
 .blob-container {
@@ -60,4 +62,8 @@ button {
 	color: white
 }
 
+h1{
+	font-size: 24px;
+	font-family: "M PLUS rounded 1c";
+}
 </style>

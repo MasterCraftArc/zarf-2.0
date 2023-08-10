@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    --tw-ring-offset-color: none;
 }
 
 body{
-    background-color:#0D133D ;
+
     overflow-x: hidden;
-    padding: 5%;
-    display: flex;
+    padding: 0%;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -15,14 +15,17 @@ body{
 
 h1{
     color: #FFFFFF;
+
 }
 
 p{
     color:#BEBFC9;
     font-size: 18px;
+    font-family: 'M PLUS Rounded 1c',Tahoma, sans-serif;
 }
 
 h6{
     font-size: 20px;
     color: white;
+    font-family: Tahoma, sans-serif;
 }

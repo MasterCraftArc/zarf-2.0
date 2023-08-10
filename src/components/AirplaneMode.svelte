@@ -3,7 +3,7 @@
 </script>
 
 <div class="blob-container">
-	<div class="blob"><Blob/></div>
+
 	<div class="text-container">
 		<h1>Airplane Mode for the Cloud</h1>
 		<h6>Modern software assumes your systems have access to the internet. This may work for 99% of the world, but certain SECURE systems need to maintain capabilities while being disconnected from the internet. Zarf keeps your software running, no matter your connection status.</h6>
@@ -18,15 +18,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 15rem;
+	margin-bottom: 12rem;
 }
 
 .blob-container {
 	width: 100%;
 	height: 100%;
-}
-
-.blob{
-    width: 200%;
 }
 
 .text-container {

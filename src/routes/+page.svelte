@@ -19,7 +19,6 @@
 	import document from '../assets/png/cloud-icons/document.png';
 	import StatsCard from '../components/statsCard/StatsCard.svelte';
 	import Footer from '../components/footer/Footer.svelte';
-	import Spacing from '../components/Spacing.svelte';
 	import Defense from '../components/Defense.svelte';
 	import AirplaneMode from '../components/AirplaneMode.svelte';
 	import { onMount } from 'svelte';
@@ -40,18 +39,18 @@
 	<Home />
 
 	<div class="cardHolder">
-
+		<h1>Use Zarf To</h1>
 		<div class="Card" class:mobileLayout={!isMobile}>
 			<Card img={webSecure} heroText='Securely Package Apps & Resources'
 				text="Provides the ability to package a chunk of the internet and then securely deliver all of the files and dependencies needed to run an application in a disconnected environment." />
 
 			<Card img={wireLessCloud} heroText='Deploy Cloud Apps While Disconnected'
 				text='Provides the ability to deploy apps declaratively and without internet connectivity. Opening up the door for modern cloud capabilities to be deployed in disconnected environments.' />
-
 			<Card img={server} heroText='Easily Maintain Apps While Disconnected'
 				text='Zarf reduces the skill and resources needed to manage and update applications in disconnected environments, ensuring no downtime or data loss when updating software.' />
 		</div>
 	</div>
+
 
 	<div class="blob2"><AirplaneMode /></div>
 
@@ -64,6 +63,9 @@
 	<Columns HeroText='Disconnected in Emergencies'
 		text="The world\'s most important infrastructure needs to be able to control their connection to the internet and still run in the case of internet loss or a cyber attack." img={nuclear} />
 
+
+		<div class="cardText">
+			<h1>Why use zarf</h1>
 	<div class="CardsContainer">
 		<div class="Cards">
 			<Cards img={community} heroText='Free and Open Source Solution'
@@ -89,6 +91,7 @@
 				text="Zarf spins up K8 clusters, docker registries, and git servers offline to allow for disconnected use. For connected users, this provides a failover solution." />
 		</div>
 	</div>
+	</div>
 	<StatsCard />
 	<Defense />
 	<Footer />
@@ -99,13 +102,15 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 1em;
+		margin: none;
+		max-width: none;
 	}
 
 	.Card {
 		display: flex;
-		gap: 60px;
 	}
+
+
 
 	.CardsContainer {
 		display: flex;
@@ -113,14 +118,20 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		margin: 0;
+	}
+
+	.cardText{
+		text-align: center;
 	}
 
 	.cardHolder {
-		margin-top: 65em;
+		margin-top: 42em;
 		text-align: center;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 	}
 
 	.Cards {
@@ -128,10 +139,26 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		margin: 10px; /* Add margin for spacing between cards */
-		flex-basis: 300px; /* Set the initial width of each card */
-		max-width: 400px; /* Set the maximum width of each card */
+		margin: 10px;
+		flex-basis: 300px;
+		max-width: 400px;
 	}
+
+	h1{
+	font-family: "M PLUS Rounded 1c";
+    font-weight: 300;
+    font-size: 3.75rem;
+    line-height: 1.2;
+	margin-bottom: 3rem;
+	margin-top: 4em;
+	}
+
+	@media screen and (min-width: 1072px){
+		h1{
+			margin-top: 0;
+		}
+	}
+
 
 	@media screen and (min-width: 992px) {
 		.blob2 {
@@ -182,6 +209,24 @@
 			width: 170%;
 			height: 100%;
 			z-index: 0;
+		}
+
+		@media (min-width: 768px){
+			.container{
+				max-width: none;
+			}
+		}
+
+		@media (min-width: 640px){
+			.container{
+				max-width: none;
+			}
+		}
+
+		@media (min-width: 1280px){
+			.container{
+				max-width: none;
+			}
 		}
 	}
 </style>

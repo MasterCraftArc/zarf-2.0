@@ -9,35 +9,39 @@
         <div class="smallContainer">
             <img class="cardImg" src={img} alt="">
             <h1>{heroText}</h1>
-            <p>{text}</p>
+            <div class="text"><p>{text}</p></div>
+
         </div>
     </div>
 </div>
 
 <style>
     .container {
-        margin-top: 5%;
+        margin:0;
     }
 
     .flex {
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+    .text{
+        width: 238px;
+        height: 114px;
+        text-align: left;
+    }
+
     .smallContainer {
-        height: 450px;
+        height: 350px;
         width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        /* padding: 27px 24px 27px 24px; */
-        margin: 1em;
-        flex-wrap: wrap;
-        box-sizing: border-box; /* Include padding and borders in width and height calculations */
+        margin: 15px;
+        box-sizing: border-box;
     }
 
     .cardImg {
@@ -50,6 +54,9 @@
         justify-content: center;
         align-items: center;
         font-size: 24px;
+        font-family: 'M PLUS Rounded 1c',Tahoma, sans-serif;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     p{

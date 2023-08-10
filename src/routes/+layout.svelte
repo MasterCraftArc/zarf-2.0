@@ -37,7 +37,7 @@
 		background-color: #0c143c;
 		margin: 0;
 		padding: 0;
-		font-family: 'Roboto', sans-serif; /* Use 'Roboto' font family */
+		font-family: 'Roboto', sans-serif;
 		box-sizing: 0;
 	}
 	* {

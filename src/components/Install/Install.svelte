@@ -42,43 +42,55 @@
 </div>
 
 <style>
+
+
     .bigContainer {
-        margin-top: 175px;
+        margin-top: 125%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 100%;
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 
     .CopyContainer {
-        display: flex;
-        border: 2px solid #7BD5F4;
-        background-color: #2F3459;
-        border-radius: 2%;
-        height: 35vh;
-        width: 75vw;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 10px;
-        flex-shrink: 2;
-    }
+    display: flex;
+    border: 2px solid #7BD5F4;
+    background-color: #2F3459;
+    border-radius: 2%;
+    height: 35vh;
+    width: 75vw;
+    flex-direction: column;
+    justify-content: space-between; /* Update to center the content vertically */
+    padding: 10px;
+    overflow: auto; /* Add overflow property to enable scrolling if necessary */
+}
 
-    .Copy {
-        display: flex;
-        flex-direction: row; /* Modified to column */
-        align-items: center;
-        justify-content: space-evenly; /* Added */
-        width: 100%;
-        margin-top: 20px;
-    }
+.Copy {
+    display: flex;
+    flex-direction: row; /* Change back to column */
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
 
-    button {
-        background-color: #2F3459;
-        border: none;
-        color: white;
-    }
+input {
+    background-color: #2F3459;
+    border: none;
+    color: white;
+    width: 100%; /* Adjust width to 100% */
+    max-width: 600px; /* Add max-width property to limit the width */
+}
+
+
+button {
+    background-color: #2F3459;
+    border: none;
+    color: white;
+    padding: 5px 10px; /* Adjust the padding as needed */
+    font-size: 13px; /* Adjust the font size as needed */
+}
+
 
     #docs{
         margin-top: 2%;
@@ -96,17 +108,6 @@
 
     button:hover {
         color: #7BD5F4;
-    }
-
-    input {
-        background-color: #2F3459;
-        border: none;
-        color: white;
-        width: 650px;
-    }
-
-    img{
-        height: 35px;
     }
 
     h1 {

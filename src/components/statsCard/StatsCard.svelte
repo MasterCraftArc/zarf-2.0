@@ -10,41 +10,98 @@
         <div class="p">
             <p>Zarf makes modern software capabilities a reality in disconnected environments. We aim to deliver secure software to the world's most important environments.</p>
         </div>
+
     </div>
-    <img src="{StatsCard}" alt="" class="stats-card">
+<div class="other">
+    <div class="small">
+        <h1>663</h1>
+        <h6>stars</h6>
+    </div>
+    <div class="small">
+        <h1>1111</h1>
+        <h6>pull requests</h6>
+    </div>
+<div class="something">
+    <div class="small">
+        <h1>56</h1>
+        <h6>Contributors</h6>
+    </div>
+
     <img src="{zarf}" alt="" class="zarf-image">
 </div>
+</div>
+
+
+    <img src="{StatsCard}" alt="" class="stats-card">
+
+</div>
+
 
 
 <style>
 .container {
     position: relative;
     display: flex;
-    align-items: center; /* Align items to the top */
-    justify-content: center; /* Justify content to the left */
+    align-items: center;
+    justify-content: center;
     z-index: 1;
-    max-width: 100%; /* Set maximum width to 100% */
-    overflow: hidden; /* Hide the overflow content */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
 
+.other {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+.something {
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+.small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .stats-card {
-    height: 45vh;
-    width: 90vw;
+    position: relative;
     z-index: 1;
+    height: 55vh;
+    /* width: 1000px; */
+    /* max-width: 1024px; */
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 h1 {
     padding-bottom: 10px;
     font-size: 60px;
-    margin-left: 2rem;
+    font-family: 'M PLUS Rounded 1c',Tahoma, sans-serif;
 }
 
 .p {
-    width: 75%;
-    margin-left: 2rem;
-    word-wrap: break-word; /* Breaks long words */
-    white-space: normal; /* Wraps text within the container */
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 350px;
 }
 
 p {
@@ -53,39 +110,74 @@ p {
 
 h6 {
     font-size: 20px;
-    margin-left: 2rem;
 }
 
 .text-container {
     position: absolute;
-    top: 0;
+    top: 2rem;
+    left: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 1%;
+    align-items: center;
     z-index: 2;
-    margin-top: 2rem;
-    max-width: 100%; /* Set maximum width to 100% of the container */
 }
 
 .zarf-image {
-    position: absolute;
-    bottom: 0;
-    right: -1;
     height: 200px;
     width: 200px;
     z-index: 1;
 }
 
-@media (max-width: 992px) {
-    .stats-card {
-        height: 110vh;
-        width: 60vw;
+@media (max-width: 1147px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      position: relative;
+
     }
 
-    .text-container{
-        width: 300px;
+    .other,
+    .something,
+    .text-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
-}
+
+    .something,.other {
+        right: 15rem;
+      bottom: -16rem;
+
+      margin-right: 0;
+    }
+
+
+    .text-container {
+      bottom: -66rem;
+    }
+
+    .stats-card {
+      height: 110vh;
+      max-width: 60vw;
+    }
+
+    .other{
+        flex-direction: column;
+        top: 38%;
+    }
+
+    .something{
+        top: -20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 1280px){
+        .container {
+            max-width: none;
+        }}
+  }
 </style>

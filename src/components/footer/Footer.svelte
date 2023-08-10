@@ -20,11 +20,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-right: 2rem;
+        bottom: 100;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .zarf{
         height: 100px;
         width: 100px;
+        margin-left: 15px;
     }
 
     .github{
@@ -35,7 +40,13 @@
         margin-top: 2%;
         color: white;
     }
+    a{
+        margin: 5px;
+    }
     .holder{
         padding-top: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 </style>

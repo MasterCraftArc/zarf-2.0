@@ -1,7 +1,6 @@
 <script>
     import zarfEdge from '../../assets/png/zarf-edge.png';
     import { onMount } from 'svelte';
-    import Blob from '../blob/Blob.svelte';
 
     let initialData;
 
@@ -18,7 +17,7 @@
             <div class="content">
                 <p>DevSecOps for Airgap</p>
                 <h6>A free open source tool that enables continuous software delivery on disconnected networks.</h6>
-                <button><a href="/Install">INSTALL NOW</a></button>
+                <a href="/Install"><button>INSTALL NOW</button></a>
             </div>
         </div>
         <div class="right">
@@ -28,7 +27,9 @@
 
 
 
+
     <style>
+
         .FlexContainer {
             display: flex;
             flex-direction: column;
@@ -36,11 +37,11 @@
             align-items: center;
             width: 100%;
             min-height: 75vh;
-            margin: 5%;
-            margin-top: 6em;
+            margin-right: 5%;
+            margin-top: 5em;
             position: absolute;
-            padding-left: 5%;
-            overflow: hidden; /* Prevent children from overflowing */
+            padding-left: 32px;
+            overflow: hidden;
         }
 
         .left {
@@ -51,6 +52,7 @@
             position: relative;
             width: 100%;
             overflow: hidden;
+            margin-left: 2rem;
         }
 
         .content {
@@ -59,36 +61,39 @@
             justify-content: flex-start;
             flex-direction: column;
             align-content: center;
-            margin-left: 20px; /* Add margin to space content div from the left */
+            margin-left: 20px;
         }
 
         p {
-            font-size: 48px;
+            font-size: 46px;
             letter-spacing: -0.25px;
             font-weight: 400;
             line-height: 1.167;
             color: white;
             padding-bottom: 25px;
-            white-space: normal; /* Reset white-space to allow wrapping */
-            word-wrap: break-word; /* Break word if it exceeds container width */
+            white-space: normal;
+            word-wrap: break-word;
         }
 
         h6 {
-            font-size: 25px;
+            font-size: 20px;
             color: white;
             max-width: 50%;
             text-align: left;
-            margin: 0; /* Remove default margin */
+            margin: 0;
+            color: #BEBFC9;
+            font-family: 'Roboto';
         }
 
         button {
             border-radius: 50px;
             border: none;
             background-color: aqua;
-            margin-top: 6%;
-            width: 126px;
-            height: 36px;
-            font-size: 14px;
+            margin-top: 15%;
+            width: 145px;
+            height: 42px;
+            font-size: 15px;
+            font-family: 'Roboto';
             letter-spacing: 0.4px;
         }
 
@@ -106,18 +111,26 @@
             align-items: center;
             width: 100%;
             margin-top: 50px;
-            overflow: hidden; /* Prevent children from overflowing */
+            overflow: hidden;
         }
 
         .right img {
-            height: 450px;
+            height: 360px;
             width: auto;
+            flex-shrink: 0;
         }
 
         @media screen and (min-width: 1072px) {
+
+
             .FlexContainer {
                 flex-direction: row;
-                margin-left: 2em;
+                margin-left: 2rem;
+                margin-top: .2em;
+            }
+
+            p {
+                font-size: 96px;
             }
 
             .left {
@@ -136,8 +149,10 @@
             }
 
             .right img {
-                height: 550px;
+                height: 450px;
                 width: auto;
+
             }
         }
+
     </style>

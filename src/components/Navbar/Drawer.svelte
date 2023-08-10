@@ -22,22 +22,27 @@
   });
 </script>
 
+<style>
+  *:focus {
+    outline: none;
+    /* --tw-ring-offset-color: transparent; */
+
+    --tw-ring-offset-color: none;
+  }
+
+  img {
+    height: 30px;
+  }
+</style>
+
 <div class="text-center">
-  <Button on:click={() => (hidden2 = false)} id="something" class="button-no-background" style="background-color: transparent;">
+  <Button on:click={() => (hidden2 = false)} id="something" class="button-no-background focus:outline-none focus:none" classBackdrop=none style="background-color: transparent;">
     <img src="{hamburger}" alt="">
   </Button>
 </div>
 
 <Drawer transitionType="fly" {transitionParams} bind:hidden={hidden2} id='sidebar2' style="background-color: {sidebarBackgroundColor}">
   <div class='flex items-center'>
-    <h5 id="drawer-navigation-label-3" class="text-base font-semibold text-white uppercase dark:text-gray-400">Menu</h5>
-    <CloseButton on:click={() => (hidden2 = true)} class='mb-4 dark:text-white' style="color: white;">
-      <style>
-        .close-button:hover {
-          background-color: inherit;
-        }
-      </style>
-    </CloseButton>
   </div>
   <Sidebar>
     <SidebarWrapper divClass='overflow-y-auto py-4 px-3 rounded' style="background-color: {sidebarBackgroundColor};">
@@ -54,9 +59,3 @@
     </SidebarWrapper>
   </Sidebar>
 </Drawer>
-
-<style>
-  img {
-    height: 30px;
-  }
-</style>

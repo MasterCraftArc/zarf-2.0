@@ -20,23 +20,24 @@
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
-        margin: 10%;
+        margin: 2%;
     }
 
     .left {
-        width: 50%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .right {
-        width: 50%;
-    }
 
     img {
         max-height: 350px;
         max-width: 350px;
+    }
+
+    p{
+        font-family: "Roboto";
     }
 
     h1 {
@@ -44,6 +45,7 @@
         margin-bottom: 2%;
         font-size: 43px;
         margin-bottom: 25px;
+        font-family: 'M PLUS Rounded 1c',Tahoma, sans-serif;
     }
 
     @media screen and (max-width: 991px) {
