@@ -3,10 +3,11 @@
     const githubLink = 'https://github.com/defenseunicorns/pepr'
     import slack from '../../assets/svg/slack.svg'
     import zarf from '../../assets/png/zarf-footer.png'
+    import bigLeapFrog from '../../assets/png/bigLeapFrog.png'
 </script>
 
 <div class="container">
-    <img class="zarf" src="{zarf}" alt="">
+    <img class="zarf" src="{bigLeapFrog}" alt="">
 
     <div class="holder">
         <a href={githubLink}><img class="github" src="{github}" alt=""></a>

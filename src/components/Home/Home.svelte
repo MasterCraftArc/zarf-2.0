@@ -1,6 +1,7 @@
 <script>
     import zarfEdge from '../../assets/png/zarf-edge.png';
     import { onMount } from 'svelte';
+    import bigLeapFrog from '../../assets/png/bigLeapFrog.png'
 
     let initialData;
 
@@ -21,7 +22,7 @@
             </div>
         </div>
         <div class="right">
-            <img class="zarfEdge" src="{zarfEdge}" alt="">
+            <img class="bigLeapFrog" src="{bigLeapFrog}" alt="">
         </div>
     </div>
 
@@ -88,7 +89,7 @@
         button {
             border-radius: 50px;
             border: none;
-            background-color: aqua;
+            background-color:#97d358 ;
             margin-top: 15%;
             width: 145px;
             height: 42px;

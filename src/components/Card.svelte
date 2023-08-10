@@ -1,5 +1,5 @@
 <script>
-    import card from '../assets/png/zarf-card.png';
+    import card from '../assets/png/finalCard.png';
     export let img;
     export let text;
     export let heroText;
@@ -38,6 +38,7 @@
         z-index: 0;
         width: 300px;
         height: 350px;
+        border-radius: 5%;
     }
 
     .smallContainer {

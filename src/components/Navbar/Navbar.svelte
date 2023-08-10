@@ -3,6 +3,7 @@
     const githubLink = 'https://github.com/defenseunicorns/zarf';
     import slack from '../../assets/svg/slack.svg';
     import zarf from '../../assets/svg/zarf-logo-small.svg';
+    import leapFrog from '../../assets/png/leapfrog2.png'
     import { onMount } from 'svelte';
 
     let scrolled = false;
@@ -27,7 +28,7 @@
     <div class="container">
         <div class="holder">
             <a href="/">
-                <img class="zarf" src="{zarf}" alt="">
+                <img class="leapfrog" src="{leapFrog}" alt="">
             </a>
         </div>
 
@@ -78,9 +79,9 @@
         width: auto;
     }
 
-    .zarf {
+    .leapfrog {
         height: auto;
-        width: 156px;
+        width: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -95,7 +96,6 @@
         z-index: 0;
         overflow: hidden;
         max-width: none;
-        /* padding: 1em 1em 1em 0em; */
     }
 
     .mylinks {
@@ -109,7 +109,7 @@
         bottom: 0;
         height: 2px;
         width: 100%;
-        background-color: turquoise;
+        background-color: #97d358;
         transform: scaleX(0);
         transition: transform 0.3s ease-in-out;
     }
@@ -127,8 +127,8 @@
     }
 
     .selected {
-        border-bottom: 2px solid turquoise;
-        color: turquoise;
+        border-bottom: 2px solid #97d358;
+        color: #97d358;
     }
 
     .links {

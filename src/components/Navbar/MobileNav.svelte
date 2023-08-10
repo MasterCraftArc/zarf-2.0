@@ -5,6 +5,7 @@
     import zarf from '../../assets/png/zarf-logo.png';
     import { onMount } from 'svelte';
     import Drawer from './Drawer.svelte';
+    import leapFrog from '../../assets/png/leapfrog2.png'
 
     let scrolled = false;
 
@@ -24,7 +25,7 @@
 
         <div class="holder">
             <a href="/">
-                <img class="zarf" src="{zarf}" alt="">
+                <img class="leapfrog" src="{leapFrog}" alt="">
             </a>
         </div>
 
@@ -63,8 +64,9 @@
         margin-left: 1%;
     }
 
-    .zarf {
-        height: 50px;
+    .leapfrog {
+        height: auto;
+        width: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
