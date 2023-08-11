@@ -1,61 +1,110 @@
 <script>
-  import { onMount, afterUpdate } from 'svelte';
-  import { Drawer, Button, CloseButton, Sidebar, SidebarBrand, SidebarCta, SidebarDropdownItem, SidebarDropdownWrapper, SidebarGroup, SidebarItem, SidebarWrapper } from 'flowbite-svelte';
-  import { sineIn } from 'svelte/easing';
+  import { onMount } from 'svelte';
   import hamburger from '../../assets/png/hamburger_menu-removebg-preview.png';
 
-  let hidden2 = true;
-  let transitionParams = {
-    x: -320,
-    duration: 200,
-    easing: sineIn
-  };
+  let hidden = true;
 
-  let sidebarBackgroundColor = '#0D133D';
-
-  onMount(() => {
-    hidden2 = false;
-  });
-
-  afterUpdate(() => {
-    hidden2 = true;
-  });
+  function toggleMenu() {
+    hidden = !hidden;
+  }
 </script>
 
+<button on:click={toggleMenu}><img src={hamburger} alt=""></button>
+
+{#if !hidden}
+<div class="overlay" on:click={toggleMenu}></div>
+<div class="menu">
+  <button class="close-button" on:click={toggleMenu}><h1>X</h1></button>
+  <div class="items">
+    <div class="mylinks"><a href="/" >somewhere soon</a></div>
+    <div class="mylinks"><a href="/" >somewhere soon</a></div>
+    <div class="mylinks"><a href="/" >somewhere soon</a></div>
+  </div>
+
+</div>
+{/if}
+
 <style>
-  *:focus {
-    outline: none;
-    /* --tw-ring-offset-color: transparent; */
-
-    --tw-ring-offset-color: none;
-  }
-
   img {
     height: 30px;
   }
+
+  .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    z-index: 1000;
+    box-sizing: border-box;
+    background-color: #0c143c;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .close-button {
+    margin-bottom: 10px;
+  }
+
+  h1{
+    font-size: 25px;
+    color: #97d358;
+  }
+
+  a {
+  border: none;
+  color: white;
+  text-decoration: none;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-size: 20px;
+  position: relative; /* Add this to make the ::before pseudo-element relative to the link */
+}
+
+a:hover{
+  color: #97d358;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Move it just below the link text */
+  height: 2px;
+  width: 100%;
+  background-color: #97d358;
+  transform: scaleX(0);
+  transform-origin: right; /* Start the scaling from the right edge */
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform: scaleX(1); /* Scale the pseudo-element on hover */
+  transform-origin: left; /* Scale from the left edge on hover */
+}
+
+.mylinks{
+  margin: 30px;
+}
+
+button{
+  padding-left: 25px;
+}
 </style>
-
-<div class="text-center">
-  <Button on:click={() => (hidden2 = false)} id="something" class="button-no-background focus:outline-none focus:none" classBackdrop=none style="background-color: transparent;">
-    <img src="{hamburger}" alt="">
-  </Button>
-</div>
-
-<Drawer transitionType="fly" {transitionParams} bind:hidden={hidden2} id='sidebar2' style="background-color: {sidebarBackgroundColor}">
-  <div class='flex items-center'>
-  </div>
-  <Sidebar>
-    <SidebarWrapper divClass='overflow-y-auto py-4 px-3 rounded' style="background-color: {sidebarBackgroundColor};">
-      <style>
-        .sidebar-item:hover {
-          background-color: inherit;
-        }
-      </style>
-      <SidebarGroup>
-        <SidebarItem label="Product" class="text-white sidebar-item"></SidebarItem>
-        <SidebarItem label="Examples" class="text-white sidebar-item"></SidebarItem>
-        <SidebarItem label="Docs" class="text-white sidebar-item"></SidebarItem>
-      </SidebarGroup>
-    </SidebarWrapper>
-  </Sidebar>
-</Drawer>

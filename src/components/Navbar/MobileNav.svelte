@@ -2,7 +2,6 @@
     import github from '../../assets/png/github.png';
     const githubLink = 'https://github.com/defenseunicorns/zarf';
     import slack from '../../assets/svg/slack.svg';
-    import zarf from '../../assets/png/zarf-logo.png';
     import { onMount } from 'svelte';
     import Drawer from './Drawer.svelte';
     import leapFrog from '../../assets/png/leapfrog2.png'
@@ -79,7 +78,7 @@
         width: 100%;
         height: 80px;
         z-index: 0;
-        overflow: hidden;
+
         max-width: none;
         padding: 1em;
     }

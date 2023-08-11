@@ -39,7 +39,7 @@
             width: 100%;
             min-height: 75vh;
             margin-right: 5%;
-            margin-top: 5em;
+            margin-top: 8em;
             position: absolute;
             padding-left: 32px;
             overflow: hidden;

@@ -94,7 +94,7 @@
         width: 100%;
         height: 80px;
         z-index: 0;
-        overflow: hidden;
+        /* overflow: hidden; */
         max-width: none;
     }
 
