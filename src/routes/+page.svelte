@@ -22,7 +22,7 @@
 	import Defense from '../components/Defense.svelte';
 	import AirplaneMode from '../components/AirplaneMode.svelte';
 	import { onMount } from 'svelte';
-
+	import plane from '../assets/png/jet-plane.png'
 	let isMobile = false;
 
 	onMount(() => {
@@ -39,7 +39,7 @@
 	<Home />
 
 	<div class="cardHolder">
-		<h1>Use Zarf To</h1>
+		<h1>Use LeapfrogAI for</h1>
 		<div class="Card" class:mobileLayout={!isMobile}>
 			<Card img={webSecure} heroText='Securely Package Apps & Resources'
 				text="Provides the ability to package a chunk of the internet and then securely deliver all of the files and dependencies needed to run an application in a disconnected environment." />
@@ -61,17 +61,17 @@
 		text='Some systems experience disconnection occasionally due to temporary loss of access, like a rocket going around the moon. Zarf keeps those systems running.' img={sub} />
 
 	<Columns HeroText='Disconnected in Emergencies'
-		text="The world\'s most important infrastructure needs to be able to control their connection to the internet and still run in the case of internet loss or a cyber attack." img={nuclear} />
+		text="The world\'s most important infrastructure needs to be able to control their connection to the internet and still run in the case of internet loss or a cyber attack." img={plane} />
 
 
 		<div class="cardText">
-			<h1>Why use zarf</h1>
+			<h1>Why use LeapfrogAI</h1>
 	<div class="CardsContainer">
 		<div class="Cards">
 			<Cards img={community} heroText='Free and Open Source Solution'
 				text="Source code is open and viewable to the public which increases security through transparency. Zarf is also a free tool and available for public use." />
 
-			<Cards img={document} heroText='Installs Packages with Two Commands'
+			<Cards img={pieces} heroText='Installs Packages with Two Commands'
 				text="Reduces the risk of installation error and complexity of installation procedures by simplifying the installation of packages to just two steps." />
 		</div>
 
@@ -79,7 +79,7 @@
 			<Cards img={hosting} heroText='Built to Be Distro Agnostic'
 				text="Currently offers fully automated support for K3s, K3d, and Kind. Is also compatible with EKS, AKS, GKE, RKE2 and many others distro services." />
 
-			<Cards img={hosting} heroText='Consistently Deploy Across Environments'
+			<Cards img={document} heroText='Consistently Deploy Across Environments'
 				text="Ensures that applications are deployed the same way each time, whether deployed to a different cluster, machine, or environment." />
 		</div>
 

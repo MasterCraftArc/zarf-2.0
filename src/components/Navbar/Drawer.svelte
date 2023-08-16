@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+
   import hamburger from '../../assets/png/hamburger_menu-removebg-preview.png';
 
   let hidden = true;
@@ -20,7 +20,6 @@
     <div class="mylinks"><a href="/" >somewhere soon</a></div>
     <div class="mylinks"><a href="/" >somewhere soon</a></div>
   </div>
-
 </div>
 {/if}
 
@@ -75,7 +74,7 @@
   justify-content: space-between;
   font-family: 'Roboto';
   font-size: 20px;
-  position: relative; /* Add this to make the ::before pseudo-element relative to the link */
+  position: relative;
 }
 
 a:hover{
@@ -86,18 +85,18 @@ a::before {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -2px; /* Move it just below the link text */
+  bottom: -2px;
   height: 2px;
   width: 100%;
   background-color: #97d358;
   transform: scaleX(0);
-  transform-origin: right; /* Start the scaling from the right edge */
+  transform-origin: right;
   transition: transform 0.3s ease-in-out;
 }
 
 a:hover::before {
-  transform: scaleX(1); /* Scale the pseudo-element on hover */
-  transform-origin: left; /* Scale from the left edge on hover */
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .mylinks{

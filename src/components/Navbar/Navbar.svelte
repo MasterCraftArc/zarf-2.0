@@ -1,8 +1,7 @@
 <script>
     import github from '../../assets/png/github.png';
-    const githubLink = 'https://github.com/defenseunicorns/zarf';
+    const githubLink = 'https://github.com/defenseunicorns/leapfrogai';
     import slack from '../../assets/svg/slack.svg';
-    import zarf from '../../assets/svg/zarf-logo-small.svg';
     import leapFrog from '../../assets/png/leapfrog2.png'
     import { onMount } from 'svelte';
 
@@ -94,7 +93,6 @@
         width: 100%;
         height: 80px;
         z-index: 0;
-        /* overflow: hidden; */
         max-width: none;
     }
 

@@ -1,6 +1,23 @@
 <script>
     import StatsCard from '../../assets/png/stats-card.png'
-    import zarf from '../../assets/png/zarf-bubbles.png'
+    import zarf from '../../assets/png/bigLeapFrog.png'
+    import SmallStats from '../../assets/png/stats-card-sm.png'
+    import { browser } from '$app/environment';
+    import { onMount } from 'svelte';
+
+    let windowWidth
+
+    if (browser){
+        windowWidth = window.innerWidth;
+    }
+
+    onMount(() => {
+        window.addEventListener('resize', () => {
+            windowWidth = window.innerWidth;
+        });
+    });
+
+    const breakpoint = 1147
 </script>
 
 <div class="container">
@@ -10,7 +27,6 @@
         <div class="p">
             <p>Zarf makes modern software capabilities a reality in disconnected environments. We aim to deliver secure software to the world's most important environments.</p>
         </div>
-
     </div>
 <div class="other">
     <div class="small">
@@ -30,9 +46,11 @@
     <img src="{zarf}" alt="" class="zarf-image">
 </div>
 </div>
-
-
-    <img src="{StatsCard}" alt="" class="stats-card">
+{#if windowWidth <= breakpoint}
+  <img src="{SmallStats}" alt="" class="stats-card">
+{:else}
+  <img src="{StatsCard}" alt="" class="stats-card">
+{/if}
 
 </div>
 
@@ -85,8 +103,6 @@
     position: relative;
     z-index: 1;
     height: 55vh;
-    /* width: 1000px; */
-    /* max-width: 1024px; */
     left: 0;
     right: 0;
     margin: auto;
@@ -106,6 +122,7 @@ h1 {
 
 p {
     font-size: 16px;
+    color: white;
 }
 
 h6 {
@@ -135,7 +152,10 @@ h6 {
       text-align: center;
       justify-content: space-between;
       position: relative;
+    }
 
+    h1{
+        max-width: 250px;
     }
 
     .other,
@@ -148,7 +168,7 @@ h6 {
 
     .something,.other {
         right: 15rem;
-      bottom: -16rem;
+      bottom: -13rem;
 
       margin-right: 0;
     }

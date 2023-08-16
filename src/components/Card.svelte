@@ -1,5 +1,5 @@
 <script>
-    import card from '../assets/png/finalCard.png';
+    import card from '../assets/png/zarf-card.png';
     export let img;
     export let text;
     export let heroText;
@@ -72,8 +72,8 @@
     }
 
     .cardImg {
-        height: 80px;
-        width: 80px;
+
+        width: 100px;
     }
 
 </style>

@@ -16,9 +16,9 @@
     <div class="FlexContainer">
         <div class="left">
             <div class="content">
-                <p>DevSecOps for Airgap</p>
-                <h6>A free open source tool that enables continuous software delivery on disconnected networks.</h6>
-                <a href="/Install"><button>INSTALL NOW</button></a>
+                <p>Generative AI for National Security</p>
+                <h6>Chat GPT like capabilites for secure, local, and air gapped systems</h6>
+                <a href="https://github.com/defenseunicorns/leapfrogai"><button>INSTALL NOW</button></a>
             </div>
         </div>
         <div class="right">
@@ -79,7 +79,6 @@
         h6 {
             font-size: 20px;
             color: white;
-            max-width: 50%;
             text-align: left;
             margin: 0;
             color: #BEBFC9;
@@ -131,7 +130,7 @@
             }
 
             p {
-                font-size: 96px;
+                font-size: 70px;
             }
 
             .left {

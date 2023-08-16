@@ -40,6 +40,12 @@
         font-family: "Roboto";
     }
 
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     h1 {
         color: white;
         margin-bottom: 2%;
