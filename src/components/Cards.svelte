@@ -25,10 +25,11 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
+        padding: 40px;
     }
 
     .text{
-        width: 238px;
+        width: 200px;
         height: 114px;
         text-align: left;
     }

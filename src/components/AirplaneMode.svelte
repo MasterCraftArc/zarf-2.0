@@ -5,8 +5,8 @@
 <div class="blob-container">
 
 	<div class="text-container">
-		<h1>Airplane Mode for the Cloud</h1>
-		<h6>Modern software assumes your systems have access to the internet. This may work for 99% of the world, but certain SECURE systems need to maintain capabilities while being disconnected from the internet. Zarf keeps your software running, no matter your connection status.</h6>
+		<h1>Generative AI for Disconnected Systems</h1>
+		<h6>Modern Generative AI assumes your systems have access to the internet. This may work for 99% of the world, but certain SECURE systems need to maintain capabilities while being disconnected from the internet. LeapfrogAI provides the advanced AI capabilities available on the open internet in your Airgapped system</h6>
 	</div>
 </div>
 

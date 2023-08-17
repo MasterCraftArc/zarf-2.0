@@ -2,7 +2,6 @@
     import github from '../../assets/png/github.png'
     const githubLink = 'https://github.com/defenseunicorns/pepr'
     import slack from '../../assets/svg/slack.svg'
-    import zarf from '../../assets/png/zarf-footer.png'
     import bigLeapFrog from '../../assets/png/bigLeapFrog.png'
 </script>
 
@@ -12,7 +11,7 @@
     <div class="holder">
         <a href={githubLink}><img class="github" src="{github}" alt=""></a>
         <a href="/"><img class="github" src="{slack}" alt=""></a></div>
-        <p>copyright © 2022 Zarf Project. All rights reserved</p>
+        <p>copyright © 2023 LeapfrogAI Project. All rights reserved</p>
     </div>
 
 
@@ -40,6 +39,7 @@
         margin-bottom: 5%;
         margin-top: 2%;
         color: white;
+        margin-left: 20px;
     }
     a{
         margin: 5px;

@@ -41,13 +41,13 @@
 	<div class="cardHolder">
 		<h1>Use LeapfrogAI for</h1>
 		<div class="Card" class:mobileLayout={!isMobile}>
-			<Card img={webSecure} heroText='Securely Package Apps & Resources'
-				text="Provides the ability to package a chunk of the internet and then securely deliver all of the files and dependencies needed to run an application in a disconnected environment." />
+			<Card img={webSecure} heroText='Generative AI for Airgapped Systems'
+				text="LeapfrogAI mirrors OpenAI and Hugging Face API surface so secure and disconnected enviroments can have a ChatGPT like experience while fully disconnected from the internet" />
 
-			<Card img={wireLessCloud} heroText='Deploy Cloud Apps While Disconnected'
-				text='Provides the ability to deploy apps declaratively and without internet connectivity. Opening up the door for modern cloud capabilities to be deployed in disconnected environments.' />
-			<Card img={server} heroText='Easily Maintain Apps While Disconnected'
-				text='Zarf reduces the skill and resources needed to manage and update applications in disconnected environments, ensuring no downtime or data loss when updating software.' />
+			<Card img={wireLessCloud} heroText='Vector Databases & Embedding Creation'
+				text='LeapfrogAI has efficent similarity searches on large scale databases and generative embeddings wich can be used for semantic similarity, clustering and more' />
+			<Card img={server} heroText='Fine Tune Custom Models'
+				text='LeapfrogAI has the ability to leverage customer specific data to fine-tune models that enable the AI to better understand your domain and provide more accurate contextal outputs' />
 		</div>
 	</div>
 
@@ -55,10 +55,10 @@
 	<div class="blob2"><AirplaneMode /></div>
 
 	<Columns HeroText='Sometimes Disconnected'
-		text='Some systems experience disconnection occasionally due to temporary loss of access, like a rocket going around the moon. Zarf keeps those systems running.' img={rocket} />
+		text='Some systems experience disconnection occasionally due to temporary loss of access, like a rocket going around the moon. LeapfrogAI keeps these systems running.' img={rocket} />
 
-	<Column HeroText='Sometimes Disconnected'
-		text='Some systems experience disconnection occasionally due to temporary loss of access, like a rocket going around the moon. Zarf keeps those systems running.' img={sub} />
+	<Column HeroText='Always Disconnected'
+		text='Other systems are always disconnected due to lack of internet access. Maybe they are underground, underwater, or on another planet.' img={sub} />
 
 	<Columns HeroText='Disconnected in Emergencies'
 		text="The world\'s most important infrastructure needs to be able to control their connection to the internet and still run in the case of internet loss or a cyber attack." img={plane} />
@@ -69,15 +69,18 @@
 	<div class="CardsContainer">
 		<div class="Cards">
 			<Cards img={community} heroText='Free and Open Source Solution'
-				text="Source code is open and viewable to the public which increases security through transparency. Zarf is also a free tool and available for public use." />
+				text="Source code is free and open source. Which increases security through transparency. Defense Unicorns does provide enterprise support for interested organizations." />
 
-			<Cards img={pieces} heroText='Installs Packages with Two Commands'
-				text="Reduces the risk of installation error and complexity of installation procedures by simplifying the installation of packages to just two steps." />
+			<Cards img={pieces} heroText='Built to Be Distro
+			Agnostic
+			'
+				text="Currently offers fully automated support for K3s, K3d, and Kind. Is also compatible with EKS, AKS, GKE, RKE2 and many others distro services." />
 		</div>
 
 		<div class="Cards">
-			<Cards img={hosting} heroText='Built to Be Distro Agnostic'
-				text="Currently offers fully automated support for K3s, K3d, and Kind. Is also compatible with EKS, AKS, GKE, RKE2 and many others distro services." />
+			<Cards img={hosting} heroText='SBOM
+			Available'
+				text="Automatically generated SBOM from the images contained within the zarf package of LeapfrogAI in compliance with federal mandates." />
 
 			<Cards img={document} heroText='Consistently Deploy Across Environments'
 				text="Ensures that applications are deployed the same way each time, whether deployed to a different cluster, machine, or environment." />
@@ -87,8 +90,8 @@
 			<Cards img={pieces} heroText='Host Registry & Git Server'
 				text="Automatically generates an SBOM from the images listed within a package, in compliance with federal mandate. Includes a UI for SBOM viewing." />
 
-			<Cards img={server} heroText='Host Registry & Git Server'
-				text="Zarf spins up K8 clusters, docker registries, and git servers offline to allow for disconnected use. For connected users, this provides a failover solution." />
+			<Cards img={server} heroText='Multi Modal Generative AI'
+				text="Combine multiple types of LLMS to enhance mission capabilities through text, speech to text, language translation, or many other generative AI modes " />
 		</div>
 	</div>
 	</div>
@@ -209,6 +212,8 @@
 			width: 170%;
 			height: 100%;
 			z-index: 0;
+			margin-bottom: 200px;
+			margin-top: 90px;
 		}
 
 		@media (min-width: 768px){

@@ -30,16 +30,16 @@
     </div>
 <div class="other">
     <div class="small">
-        <h1>663</h1>
+        <h1>118</h1>
         <h6>stars</h6>
     </div>
     <div class="small">
-        <h1>1111</h1>
+        <h1>99</h1>
         <h6>pull requests</h6>
     </div>
 <div class="something">
     <div class="small">
-        <h1>56</h1>
+        <h1>6</h1>
         <h6>Contributors</h6>
     </div>
 
@@ -79,17 +79,15 @@
     flex-direction: row;
     align-items: center;
     z-index: 2;
-    padding: 20px;
+    padding: 10px;
 }
 
 .something {
     position: absolute;
-    top: 10rem;
-    right: 3rem;
+    top: 12rem;
     display: flex;
     align-items: center;
     z-index: 2;
-    padding: 20px;
 }
 
 .small {
@@ -123,6 +121,7 @@ h1 {
 p {
     font-size: 16px;
     color: white;
+    max-width: 300px;
 }
 
 h6 {
@@ -199,5 +198,20 @@ h6 {
         .container {
             max-width: none;
         }}
+
+    @media (max-width: 500px){
+        .other {
+            top: 48%;
+        }
+        h6{
+            min-width: 200px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        p{
+            max-width: 180px;
+        }
+    }
   }
 </style>
