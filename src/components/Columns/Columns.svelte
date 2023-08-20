@@ -68,6 +68,7 @@
             order: -1;
             display: flex;
             justify-content: center;
+            margin-bottom: 10rem;
         }
 
         .container{

@@ -48,12 +48,14 @@
     @media screen and (max-width: 991px) {
         .container {
             flex-direction: column;
-            margin-top: 5rem;
+            margin-top: 15rem;
+            text-align: center;
         }
 
         .left,
         .right {
             width: 100%;
+            margin-bottom: 15rem;
         }
 
         .left{
