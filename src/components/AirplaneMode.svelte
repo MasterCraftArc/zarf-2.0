@@ -25,11 +25,13 @@
 .blob-container {
 	width: 100%;
 	height: 100%;
+
 }
 
 .text-container {
 	position: absolute;
-	top: 50%;
+	/* top: 0%; */
+	margin-top: 9rem;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
@@ -54,5 +56,12 @@ h1{
 
 h6{
 	font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	.text-container{
+		margin-bottom: 15rem;
+		margin-top: 35rem;
+	}
 }
 </style>

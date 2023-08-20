@@ -103,7 +103,6 @@
     height: 55vh;
     left: 0;
     right: 0;
-    margin: auto;
 }
 
 h1 {

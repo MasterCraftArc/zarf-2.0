@@ -69,5 +69,10 @@
             display: flex;
             justify-content: center;
         }
+
+        .container{
+            text-align: center;
+            margin-top: 5rem;
+        }
     }
 </style>

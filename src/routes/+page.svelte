@@ -61,34 +61,32 @@
 		text='Other systems are always disconnected due to lack of internet access. Maybe they are underground, underwater, or on another planet.' img={sub} />
 
 	<Columns HeroText='Disconnected in Emergencies'
-		text="The world\'s most important infrastructure needs to be able to control their connection to the internet and still run in the case of internet loss or a cyber attack." img={plane} />
+		text="The world's most important infrastructure needs to be able to control their connection to the internet and still run in the case of internet loss or a cyber attack." img={plane} />
 
 
 		<div class="cardText">
-			<h1>Why use LeapfrogAI</h1>
+			<h1 class="secondHead">Why use LeapfrogAI</h1>
 	<div class="CardsContainer">
 		<div class="Cards">
 			<Cards img={community} heroText='Free and Open Source Solution'
-				text="Source code is free and open source. Which increases security through transparency. Defense Unicorns does provide enterprise support for interested organizations." />
+				text="Source code is free and open source on Apache 2 license. Enterprise support is available from Defense for interested organizations." />
 
-			<Cards img={pieces} heroText='Built to Be Distro
-			Agnostic
-			'
-				text="Currently offers fully automated support for K3s, K3d, and Kind. Is also compatible with EKS, AKS, GKE, RKE2 and many others distro services." />
+			<Cards img={pieces} heroText='Install Packages with 3 Commands'
+				text="Instalation is easy in any environment, including disconnected systems, by simplifying the installation of packages to just three steps." />
 		</div>
 
 		<div class="Cards">
-			<Cards img={hosting} heroText='SBOM
-			Available'
+			<Cards img={hosting} heroText='Built to Be Distro
+			Agnostic'
+				text="LeapfrogAI is k8s distro agnostic. With  support for K3s, K3d, and Kind. Is also compatible with EKS, AKS, GKE, RKE2 and many others distro services." />
+
+			<Cards img={document} heroText='Deploy Across Environments'
+				text="Ensures that applications are deployed the same way each time, whether deployed to a different cluster, machine or environment." />
+		</div>
+
+		<div class="Cards">
+			<Cards img={pieces} heroText='Automats SBOM Generation'
 				text="Automatically generated SBOM from the images contained within the zarf package of LeapfrogAI in compliance with federal mandates." />
-
-			<Cards img={document} heroText='Consistently Deploy Across Environments'
-				text="Ensures that applications are deployed the same way each time, whether deployed to a different cluster, machine, or environment." />
-		</div>
-
-		<div class="Cards">
-			<Cards img={pieces} heroText='Host Registry & Git Server'
-				text="Automatically generates an SBOM from the images listed within a package, in compliance with federal mandate. Includes a UI for SBOM viewing." />
 
 			<Cards img={server} heroText='Multi Modal Generative AI'
 				text="Combine multiple types of LLMS to enhance mission capabilities through text, speech to text, language translation, or many other generative AI modes " />
@@ -156,6 +154,11 @@
 	margin-top: 4em;
 	}
 
+	.secondHead{
+		margin-top: 4rem;
+		margin-bottom: 0rem;
+	}
+
 	@media screen and (min-width: 1072px){
 		h1{
 			margin-top: 0;
@@ -212,8 +215,7 @@
 			width: 170%;
 			height: 100%;
 			z-index: 0;
-			margin-bottom: 200px;
-			margin-top: 90px;
+			/* margin-top: 15rem; */
 		}
 
 		@media (min-width: 768px){

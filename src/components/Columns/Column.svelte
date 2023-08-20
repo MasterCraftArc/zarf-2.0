@@ -20,7 +20,7 @@
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
-        margin: 2%;
+
     }
 
 
@@ -48,6 +48,7 @@
     @media screen and (max-width: 991px) {
         .container {
             flex-direction: column;
+            margin-top: 5rem;
         }
 
         .left,
