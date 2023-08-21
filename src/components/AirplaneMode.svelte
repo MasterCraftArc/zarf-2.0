@@ -63,5 +63,8 @@ h6{
 		margin-bottom: 15rem;
 		margin-top: 35rem;
 	}
+	.blob-container{
+		margin-top: 25rem;
+	}
 }
 </style>

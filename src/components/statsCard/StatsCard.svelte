@@ -25,7 +25,7 @@
         <h6>OPEN SOURCE PROJECT</h6>
         <h1>Join our Mission</h1>
         <div class="p">
-            <p>Zarf makes modern software capabilities a reality in disconnected environments. We aim to deliver secure software to the world's most important environments.</p>
+            <p>LeapfrogAI makes modern software capabilities a reality in disconnected environments. We aim to deliver secure software to the world's most important environments.</p>
         </div>
     </div>
 <div class="other">

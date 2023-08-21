@@ -69,10 +69,10 @@
 	<div class="CardsContainer">
 		<div class="Cards">
 			<Cards img={community} heroText='Free and Open Source Solution'
-				text="Source code is free and open source on Apache 2 license. Enterprise support is available from Defense for interested organizations." />
+				text="Source code is free and open source on Apache 2 license. Enterprise support is available from Defense Unicorns for interested organizations." />
 
 			<Cards img={pieces} heroText='Install Packages with 3 Commands'
-				text="Instalation is easy in any environment, including disconnected systems, by simplifying the installation of packages to just three steps." />
+				text="Installation is easy in any environment, including disconnected systems, by simplifying the installation of packages to just three steps." />
 		</div>
 
 		<div class="Cards">
@@ -86,10 +86,10 @@
 
 		<div class="Cards">
 			<Cards img={pieces} heroText='Automats SBOM Generation'
-				text="Automatically generated SBOM from the images contained within the zarf package of LeapfrogAI in compliance with federal mandates." />
+				text="Automatically generated SBOM from the images contained within the Zarf package of LeapfrogAI in compliance with federal mandates." />
 
 			<Cards img={server} heroText='Multi Modal Generative AI'
-				text="Combine multiple types of LLMS to enhance mission capabilities through text, speech to text, language translation, or many other generative AI modes " />
+				text="Combine multiple types of LLMs to enhance mission capabilities through text, speech to text, language translation, or many other generative AI modes " />
 		</div>
 	</div>
 	</div>
