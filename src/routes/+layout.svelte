@@ -20,7 +20,6 @@
 
 	function handleResize(){
 		isMobile = window.innerWidth <= 992;
-
 	}
 </script>
 
